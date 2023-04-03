@@ -1,0 +1,80 @@
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'leftzone rightzone'
+    ;
+    height: 100vh;
+    color: #fff;
+    background-color: #272B35;
+    overflow-x: hidden;
+}
+
+.leftzone{
+    padding: 5rem;
+    grid-area: leftzone;
+    background-color: #272B35;
+}
+
+.rightzone{
+    padding: 5.5rem;
+    grid-area: rightzone;
+    background-color: #fff;
+    height: 100%;
+}
+
+.cadastrar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 120px;
+}
+
+.entrar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 160px;
+}
+
+.cadastrar input{
+    border-color: #fff;
+    background-color: #272B35;
+    width: 500px;
+    border-radius: 7px;
+    height: 50px;
+}
+
+.entrar input{
+    background-color: #fff;
+    width: 500px;
+    border-radius: 7px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.cadastrar input::placeholder{
+    color: #fff;
+}
+
+
+.botao-entrar{
+    background-color: #000;
+    color: #fff;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+    margin-left: -60px;
+}
+
+.botao-cadastrar{
+    color: #000;
+    margin-left: 200px;
+}
+
+.botao{
+    margin-top: -80px;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+}
