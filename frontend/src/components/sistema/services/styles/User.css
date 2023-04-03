@@ -1,0 +1,11 @@
+div.user-account-area{
+    height: 100%;
+    width: 80%;
+    margin-left: 7rem;
+
+    padding: 2rem;
+    padding-bottom: 10em;
+    
+    border-radius: 7px;
+    border: 2px solid #272B35;
+}

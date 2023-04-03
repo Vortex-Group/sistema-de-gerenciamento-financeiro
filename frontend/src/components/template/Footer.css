@@ -1,0 +1,73 @@
+footer.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'rights about services contact';
+    height: 100%;
+
+    color: #fff;
+    border-top: 2px solid #fff;
+    background-color: #272B35;
+    grid-area: footer;
+}
+
+footer.footer div{
+    padding: 2rem 2rem;
+}
+
+footer.footer div a{
+    padding: 0.2em;
+    font-size: 0.9rem;
+}
+
+div.footer-sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer-servicos{
+    display: flex;
+    flex-direction: column;
+}
+
+div.footer-servicos a{
+    color: #fff;
+    text-decoration: none;
+}
+
+div.footer-contato a img{
+    height: 40px;
+    width: 40px;
+}
+
+
+@media(max-width: 768px){
+    footer.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'rights'
+    'about'
+    'services'
+    'contact'
+    ;
+    height: 100%;
+
+    color: #fff;
+    border-top: 2px solid #fff;
+    background-color: #272B35;
+    }
+    .footer-header{
+        grid-area: rights;
+    }
+    .footer-sobre{
+        grid-area: about;
+    }
+    .footer-servicos{
+        grid-area: services;
+    }
+    .footer-contato{
+        grid-area: contact;
+    }
+}

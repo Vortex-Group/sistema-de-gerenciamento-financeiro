@@ -1,0 +1,62 @@
+div.item-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'nav'
+    'header'
+    'main'
+    'footer'
+    ;
+    height: 100vh;
+}
+
+div.about-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 1fr;
+    grid-template-areas:
+    'intro'
+    'desc1'
+    'desc2'
+    'desc3'
+    ;
+    grid-area: main;
+}
+
+div.about-item button{
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+  
+    width: 120px;
+    height: 40px;
+}
+
+div.item-intro a button{
+    color: black;
+    font-weight: 700;
+    font-size: 1rem;
+}  
+
+div.item-intro{
+    grid-area: intro;
+}
+
+p.item-intro-description{
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: justify;
+}
+
+div.tool-description1{
+    grid-area: desc1;
+}
+
+div.tool-description2{
+    grid-area: desc2;
+}
+
+div.tool-description3{
+    grid-area: desc3;
+}

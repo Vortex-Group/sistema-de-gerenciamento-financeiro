@@ -1,0 +1,58 @@
+div.home-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 1fr;
+    grid-template-areas: 
+    'head head'
+    'main main'
+    ;
+    height: 100vh;
+    background-color: #fff;
+}
+
+div.head-nav{
+    grid-area: head;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: flex;
+    align-items: center;
+    
+    border-bottom: 2px solid #272B35;
+}
+
+div.head-nav aside{
+    margin-left: 30rem;
+}
+
+div.main-home{
+    grid-area: main;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 25%;
+    grid-template-areas: 
+    'user-dash'
+    'user-options'
+    'relatorio'
+    ;
+    height: 100%;
+    background-color: #fff;
+}
+
+div.main-home div{
+    margin-bottom: 5rem;
+}
+
+div.user-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'user-account user-pay'
+    'user-receive user-limits'
+    ;
+    height: 100%;
+}

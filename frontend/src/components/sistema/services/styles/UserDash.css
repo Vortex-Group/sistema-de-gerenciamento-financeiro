@@ -1,0 +1,35 @@
+div.user-dash-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'nome saldo adicionarR adiconarD'
+    'receita despesa none none'
+    ;
+    height: 80%;
+    width: 80%;
+    
+    margin-top: 3rem;
+    margin-left: 13rem;
+    margin-bottom: 10rem;
+    
+    text-align: center;
+    align-items: center;
+
+    border-radius: 7px;
+    border: 2px solid #272B35;
+}
+
+div.user-dash-area a button{
+    color: #000;
+    text-decoration: none;
+}
+
+div.user-dash-area button{
+    color: #000;
+
+    height: 40px;
+    width: 90px;
+
+    border-radius: 4px;
+    background-color: transparent;
+}
